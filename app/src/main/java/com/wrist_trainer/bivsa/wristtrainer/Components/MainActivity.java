@@ -1,6 +1,5 @@
 package com.wrist_trainer.bivsa.wristtrainer.Components;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return;
             }
 
-            TestFragment firstFragment = new TestFragment();
+            TasksFragment firstFragment = new TasksFragment();
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, firstFragment).addToBackStack("main").commit();
 
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_history) {
             this.getSupportFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
         }else if(id == R.id.nav_main){
-            TestFragment frag = new TestFragment();
+            TasksFragment frag = new TasksFragment();
             this.getSupportFragmentManager().beginTransaction().replace(R.id.container, frag).commit();
         }
 

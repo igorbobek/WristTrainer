@@ -1,7 +1,5 @@
 package com.wrist_trainer.bivsa.wristtrainer.Adapter;
 
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.content.Context;
 
 import android.support.annotation.NonNull;
@@ -18,8 +16,6 @@ import android.widget.TextView;
 
 
 import com.wrist_trainer.bivsa.wristtrainer.Animations;
-import com.wrist_trainer.bivsa.wristtrainer.Components.MainActivity;
-import com.wrist_trainer.bivsa.wristtrainer.Components.TestFragment;
 import com.wrist_trainer.bivsa.wristtrainer.R;
 import com.wrist_trainer.bivsa.wristtrainer.TaskModel;
 import com.wrist_trainer.bivsa.wristtrainer.Utils.OnTaskSelectedListener;

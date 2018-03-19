@@ -17,7 +17,7 @@ import com.wrist_trainer.bivsa.wristtrainer.Utils.OnTaskSelectedListener;
 
 import java.util.ArrayList;
 
-public class TestFragment extends Fragment implements OnTaskSelectedListener{
+public class TasksFragment extends Fragment implements OnTaskSelectedListener{
 
     private ArrayList<TaskModel> taskList = null;
 
@@ -27,7 +27,7 @@ public class TestFragment extends Fragment implements OnTaskSelectedListener{
         View fragment = inflater.inflate(R.layout.activity_test_fragment, container,false);
         ListView listView = fragment.findViewById(R.id.taskList);
         taskList = new ArrayList<>();
-        taskList.add(new TaskRotateByZ("Easy", 0, 100, 1));
+        taskList.add(new TaskRotateByZ("Easy", 20, 100, 1));
         taskList.add(new TaskRotateByZ("Normal", 50, 180,2));
         taskList.add(new TaskRotateByZ("Extreme",100, 220,3));
         listView.setAdapter(new TaskList(taskList, fragment.getContext(), this));
